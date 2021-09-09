@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class WeatherService {
 	
 	private final String serviceKey = ""; //https://www.data.go.kr/ 에 서비스키를 넣어주면 된다.
-	private final String url = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst";
+	private final String url = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst"; // 현재 2.0버전으로 업데이트 되어 사용불가 합니다 ㅠㅠ
 	
 	public String getWeatherJSON() throws Exception {
 		String base_date = new SimpleDateFormat("yyyyMMdd").format(new Date());
